@@ -2,7 +2,6 @@ export default class Wallet {
   constructor(money) {
     let _money = money;
     this.getWalletValue = () => {
-      console.log(_money);
       return _money;
     }
     this.checkCanPlay = bidValue => {
@@ -15,7 +14,7 @@ export default class Wallet {
     this.changeWallet = (value, type) => {
       if (typeof value === 'number' && !isNaN(value)) {
         if (type === '+') {
-          _money += value * 3;
+          _money += value;
         } else if (type === '-') {
           _money -= value;
         } else {

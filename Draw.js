@@ -2,7 +2,7 @@ export default class Draw {
   constructor() {
     this.options = ['red', 'green', 'blue'];
     let _result = this.drawResult();
-    this.getDrawResult = () => console.log(_result);
+    this.getDrawResult = () => _result;
   }
 
   drawResult() {

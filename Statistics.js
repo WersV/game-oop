@@ -1,12 +1,6 @@
 export default class Statistics {
   constructor() {
-    this.gameResults = [{
-      win: true,
-      bid: 2
-    }, {
-      win: false,
-      bid: 5
-    }];
+    this.gameResults = [];
   }
   addGameToStatistics(win, bid) {
     const newGame = {
